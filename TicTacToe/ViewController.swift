@@ -45,10 +45,16 @@ class GameViewController: UIViewController {
     @IBOutlet var gameSquares: [UIButton]!
     
     
+    
+    @IBAction func onButtonPress(sender: UIButton) {
+        (sender).setTitle("O", forState: UIControlState.Normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    
     //TODO implement protocol
 
 }
